@@ -1,0 +1,12 @@
+1，	
+原因：4.3.18默认依赖是1.8.9，但是实际测试是错误的
+正确：
+		<!-- spring关联依赖的未必是正确的包 -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+		
+2，太大意，写成了private UserService UserService
+		
