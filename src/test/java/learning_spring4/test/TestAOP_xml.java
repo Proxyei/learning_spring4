@@ -7,13 +7,14 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.xywei.service.UserService;
+import com.xywei.service.impl.UserServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value = { "classpath:applicationContext_aop_xml.xml" })
 public class TestAOP_xml {
 
 	@Autowired
-	private UserService userService;
+	private UserServiceImpl userService;
 
 	@Test
 	public void testAOPXML() {
